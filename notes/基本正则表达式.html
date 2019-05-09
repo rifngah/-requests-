@@ -1,0 +1,726 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.3 基本正则表达式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="分组.html" />
+    
+    
+    <link rel="prev" href="Python中的正则表达式.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    第一章：正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="正则表达式入门.html">
+            
+                <a href="正则表达式入门.html">
+            
+                    
+                    1.1 正则表达式入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Python中的正则表达式.html">
+            
+                <a href="Python中的正则表达式.html">
+            
+                    
+                    1.2 Python中的正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="基本正则表达式.html">
+            
+                <a href="基本正则表达式.html">
+            
+                    
+                    1.3 基本正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="分组.html">
+            
+                <a href="分组.html">
+            
+                    
+                    1.4 分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="先行断言.html">
+            
+                <a href="先行断言.html">
+            
+                    
+                    1.5 先行断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="标记.html">
+            
+                <a href="标记.html">
+            
+                    
+                    1.6 标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="替换与正则表达式编译.html">
+            
+                <a href="替换与正则表达式编译.html">
+            
+                    
+                    1.7 替换与正则编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="正则表达式练习.html">
+            
+                <a href="正则表达式练习.html">
+            
+                    
+                    1.8 正则表达式练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Python爬虫学习目标.html">
+            
+                <a href="Python爬虫学习目标.html">
+            
+                    
+                    第二章：爬虫与Requests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Requests的简单使用.html">
+            
+                <a href="Requests的简单使用.html">
+            
+                    
+                    2.1 Requests的简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="深入了解Requests.html">
+            
+                <a href="深入了解Requests.html">
+            
+                    
+                    2.2 深入了解Requets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="结构化与非结构化.html">
+            
+                <a href="结构化与非结构化.html">
+            
+                    
+                    第三章：非结构化与结构化数据提取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="正则抓取.html">
+            
+                <a href="正则抓取.html">
+            
+                    
+                    3.1 使用正则的爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="xpath与XML.html">
+            
+                <a href="xpath与XML.html">
+            
+                    
+                    3.2 Xpath与XML类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="lxml.html">
+            
+                <a href="lxml.html">
+            
+                    
+                    3.3 LXML库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Xpath爬虫案例.html">
+            
+                <a href="Xpath爬虫案例.html">
+            
+                    
+                    3.4 案例：贴吧图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Json与JsonPath.html">
+            
+                <a href="Json与JsonPath.html">
+            
+                    
+                    3.5 Json与Json数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="实例：糗事百科网站抓取.html">
+            
+                <a href="实例：糗事百科网站抓取.html">
+            
+                    
+                    3.6 糗事百科网站爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.3 基本正则表达式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x57FA;&#x7840;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">&#x57FA;&#x7840;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h2>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x54EA;&#x4E9B;&#x4EC5;&#x5305;&#x542B;&#x7B80;&#x5355;&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x5B57;&#x7B26;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x2014;&#x2014;&#x4E0D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x5B57;&#x7B26;&#x4E32;Python&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5B83;&#x4EC5;&#x5339;&#x914D;&#x5355;&#x8BCD;&#xFF0C;&#x9ED8;&#x8BA4;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x533A;&#x5206;&#x5927;&#x5C0F;&#x5199;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">&apos;Python&apos;</span>,<span class="hljs-string">&apos;I Like python&apos;</span>)
+
+print(a)
+
+b = re.search(<span class="hljs-string">&apos;Python&apos;</span>,<span class="hljs-string">&apos;I LIKE PYTHON&apos;</span>)
+
+print(b)
+</code></pre>
+<pre><code>None
+None
+</code></pre><p>&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x53EA;&#x662F;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x5339;&#x914D;&#x6587;&#x672C;&#xFF0C;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x5B9E;&#x9645;&#x7684;&#x610F;&#x4E49;&#xFF0C;&#x6BD5;&#x7ADF;&#x68C0;&#x6D4B;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x4E2D;&#x662F;&#x5426;&#x6709;&#x53E6;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x672C;&#x6765;&#x5C31;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;</p>
+<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F3A;&#x5927;&#x7684;&#x5730;&#x65B9;&#x5728;&#x4E8E;&#x80FD;&#x591F;&#x6307;&#x5B9A;&#x7528;&#x4E8E;&#x5339;&#x914D;&#x7684;&#x6587;&#x672C;&#x6A21;&#x5F0F;&#x3002;</p>
+<h3 id="&#x5B57;&#x7B26;&#x7EC4;">&#x5B57;&#x7B26;&#x7EC4;</h3>
+<p>&#x5B57;&#x7B26;&#x7EC4;&#x5141;&#x8BB8;&#x5339;&#x914D;&#x4E00;&#x7EC4;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x7B26;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x770B;&#x4E2A;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;[Pp]ython&apos;</span>,<span class="hljs-string">&apos;I like Python3 and I like python2.7 &apos;</span>)
+
+print(a)
+</code></pre>
+<pre><code>[&apos;Python&apos;, &apos;python&apos;]
+</code></pre><p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0;<code>[Pp]</code>&#x65E2;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x5927;&#x5199;&#x7684;<code>P</code>&#x4E5F;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x5C0F;&#x5199;&#x7684;<code>p</code></p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x770B;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;[Pp]thon&apos;</span>,<span class="hljs-string">&apos;I LIKE Ppython3 and i like ppython2.7&apos;</span>)
+print(a)
+</code></pre>
+<pre><code>[]
+</code></pre><p>&#x6267;&#x884C;&#x4F1A;&#x53D1;&#x73B0;&#x8F93;&#x51FA;&#x4E3A;&#x7A7A;&#x6570;&#x7EC4;&#xFF0C;&#x8FD9;&#x91CC;&#x503C;&#x7684;&#x6211;&#x4EEC;&#x6CE8;&#x610F;&#x7684;&#x662F;<code>[Pp]</code>&#x4EC5;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3002;</p>
+<h4 id="1&#x533A;&#x95F4;">1.&#x533A;&#x95F4;</h4>
+<p>&#x6709;&#x4E00;&#x4E9B;&#x5E38;&#x89C1;&#x7684;&#x5B57;&#x7B26;&#x7EC4;&#x975E;&#x5E38;&#x5927;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5339;&#x914D;&#x7684;&#x662F;&#x4EFB;&#x610F;&#x6570;&#x5B57;&#xFF0C;&#x5982;&#x679C;&#x4F9D;&#x7167;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#xFF0C;&#x6BCF;&#x6B21;&#x6211;&#x4EEC;&#x90FD;&#x9700;&#x8981;&#x4F7F;&#x7528;<code>[0123456789]</code> &#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x660E;&#x663E;&#x5F88;&#x4E0D;&#x660E;&#x667A;&#xFF0C;&#x800C;&#x5982;&#x679C;&#x8981;&#x5339;&#x914D;&#x4ECE;<code>a-z</code>&#x7684;&#x5B57;&#x6BCD;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x8FD9;&#x6837;&#x7F16;&#x5199;&#x4EE3;&#x7801;&#x7684;&#x8BDD;&#xFF0C;&#x80AF;&#x5B9A;&#x4F1A;&#x8BA9;&#x6211;&#x4EEC;&#x5D29;&#x6E83;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x9002;&#x5E94;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x64CE;&#x5728;&#x5B57;&#x7B26;&#x7EC4;&#x4E2D;&#x4F7F;&#x7528;<strong>&#x8FDE;&#x5B57;&#x7B26;<code>(-)</code>&#x4EE3;&#x8868;&#x533A;&#x95F4;</strong>&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x5339;&#x914D;&#x4EFB;&#x610F;&#x6570;&#x5B57;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>[0-9]</code>&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5339;&#x914D;&#x6240;&#x6709;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x53EF;&#x4EE5;&#x5199;&#x6210;<code>[a-z]</code>&#xFF0C;&#x60F3;&#x8981;&#x5339;&#x914D;&#x6240;&#x6709;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x53EF;&#x4EE5;&#x5199;&#x6210;<code>[A-Z]</code></p>
+<p>&#x53EF;&#x80FD;&#x6211;&#x4EEC;&#x8FD8;&#x6709;&#x4E2A;&#x9700;&#x6C42;&#xFF1A;&#x5339;&#x914D;&#x8FDE;&#x5B57;&#x7B26;&#x3002;&#x56E0;&#x4E3A;<code>-</code>&#x5728;&#x4F1A;&#x88AB;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x64CE;&#x7406;&#x89E3;&#x4E3A;&#x4EE3;&#x8868;&#x8FDE;&#x63A5;&#x533A;&#x95F4;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;<code>-</code>&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;[0-9]&apos;</span>,<span class="hljs-string">&apos;xxx007abc&apos;</span>)
+b = re.findall(<span class="hljs-string">r&apos;[a-z]&apos;</span>,<span class="hljs-string">&apos;abc001ABC&apos;</span>)
+c = re.findall(<span class="hljs-string">r&apos;[A-Za-z0-9]&apos;</span>,<span class="hljs-string">&apos;abc007ABC&apos;</span>)
+d = re.findall(<span class="hljs-string">r&apos;[0-9\-]&apos;</span>,<span class="hljs-string">&apos;0edu 007-edu&apos;</span>)
+print(a)
+print(b)
+print(c)
+print(d)
+</code></pre>
+<pre><code>[&apos;0&apos;, &apos;0&apos;, &apos;7&apos;]
+[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;]
+[&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;0&apos;, &apos;0&apos;, &apos;7&apos;, &apos;A&apos;, &apos;B&apos;, &apos;C&apos;]
+[&apos;0&apos;, &apos;0&apos;, &apos;0&apos;, &apos;7&apos;, &apos;-&apos;]
+</code></pre><h4 id="2&#x53D6;&#x53CD;">2.&#x53D6;&#x53CD;</h4>
+<p>&#x5230;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#x7EC4;&#x90FD;&#x662F;&#x7531;&#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x7B26;&#x5B9A;&#x4E49;&#xFF0C;&#x4E0D;&#x8FC7;&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x6839;&#x636E;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x7684;&#x5B57;&#x7B26;&#x5B9A;&#x4E49;&#x5B57;&#x7B26;&#x7EC4;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x5339;&#x914D;&#x4E0D;&#x5305;&#x542B;&#x6570;&#x5B57;&#x7684;&#x5B57;&#x7B26;&#x7EC4;&#x3002;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;[^0-9]&apos;</span>,<span class="hljs-string">&apos;xxx007abc&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;[^0-9]&apos;</span>,<span class="hljs-string">&apos;xxx007abc&apos;</span>)
+print(a)
+print(b)
+</code></pre>
+<pre><code>[&apos;x&apos;, &apos;x&apos;, &apos;x&apos;, &apos;a&apos;, &apos;b&apos;, &apos;c&apos;]
+&lt;re.Match object; span=(0, 1), match=&apos;x&apos;&gt;
+</code></pre><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x5B57;&#x7B26;&#x6570;&#x7EC4;&#x5F00;&#x5934;&#x4F7F;&#x7528; <code>^</code> &#x5B57;&#x7B26;&#x5B9E;&#x73B0;&#x53D6;&#x53CD;&#x64CD;&#x4F5C;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x4EE5;&#x53CD;&#x8F6C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7EC4;&#xFF08;&#x610F;&#x5473;&#x7740;&#x4F1A;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x4E4B;&#x5916;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;&#xFF09;  </p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x5728;&#x770B;&#x4E00;&#x4E2A;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;<code>n[^e]</code> &#x8FD9;&#x610F;&#x5473;&#x7740;&#x5B57;&#x7B26;<code>n</code>&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5B57;&#x7B26;&#x662F;&#x9664;&#x4E86;<code>e</code>&#x4E4B;&#x5916;&#x6240;&#x6709;&#x7684;&#x5B57;&#x7B26;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;n[^e]&apos;</span>,<span class="hljs-string">&apos;final&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;n[^e]&apos;</span>,<span class="hljs-string">&apos;final&apos;</span>)
+c = re.findall(<span class="hljs-string">&apos;r[n[^e]]&apos;</span>,<span class="hljs-string">&apos;Python&apos;</span>)
+print(a)
+print(b)
+print(c)
+</code></pre>
+<pre><code>[&apos;na&apos;]
+&lt;re.Match object; span=(2, 4), match=&apos;na&apos;&gt;
+[]
+</code></pre><p>&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;<code>a</code>&#x548C;<code>b</code>&#x5339;&#x914D;&#x7684;&#x662F;<code>na</code>&#xFF0C;&#x5B57;&#x7B26;<code>a</code>&#x56E0;&#x4E3A;&#x4E0D;&#x662F;<code>e</code>&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x88AB;&#x5339;&#x914D;&#xFF0C;&#x800C;&#x53D8;&#x91CF;<code>c</code>&#x7684;&#x503C;&#x4E3A;&#x7A7A;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x64CE;&#x53EA;&#x5339;&#x914D;&#x5230;&#x4E86;&#x5B57;&#x7B26;&#x4E32;<code>n</code>&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x800C;<code>n</code>&#x4E4B;&#x540E;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x53EF;&#x4EE5;&#x5339;&#x914D;<code>[^e]</code>&#x7684;&#x5B57;&#x7B26;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4E5F;&#x5339;&#x914D;&#x5931;&#x8D25;&#x3002;</p>
+<h4 id="3&#x5FEB;&#x6377;&#x65B9;&#x5F0F;">3.&#x5FEB;&#x6377;&#x65B9;&#x5F0F;</h4>
+<p>&#x51E0;&#x79CD;&#x666E;&#x901A;&#x5B57;&#x7B26;&#x7EC4;&#x8FD8;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x64CE;&#x4E2D;&#x6709;&#x51E0;&#x4E2A;&#x9884;&#x5B9A;&#x4E49;&#x7684;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5B9A;&#x4E49;&#x5355;&#x8BCD;&#xFF0C;&#x4EE5;&#x76EE;&#x524D;&#x5B66;&#x5230;&#x7684;&#x53EF;&#x80FD;&#x4F1A;&#x4F7F;&#x7528;<code>[A-Za-z]</code>&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5F88;&#x591A;&#x5355;&#x8BCD;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x8BE5;&#x5DE8;&#x5251;&#x4EE5;&#x5916;&#x7684;&#x5B57;&#x7B26;&#x3002;&#x6BD4;&#x5982;&#x4E2D;&#x6587;&#xFF0C;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#xFF0C;</p>
+<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x64CE;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E9B;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#xFF1A;\w &#xFF0C;&#x4E0E; &#x201C;&#x4EFB;&#x610F;&#x5355;&#x8BCD;&#x5B57;&#x7B26;&#x201D;&#x5339;&#x914D;&#xFF0C;&#x5728;Python3&#x4E2D;&#xFF0C;&#x57FA;&#x672C;&#x4E0A;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x8BED;&#x8A00;&#x7684;&#x4EFB;&#x610F;&#x5355;&#x8BCD;&#x3002;</p>
+<p>&#x800C;&#x5F53;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5339;&#x914D;&#x4EFB;&#x610F;&#x6570;&#x5B57;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5FEB;&#x6377;&#x65B9;&#x5F0F; <code>\d</code> <code>d</code>&#x5373;<code>digit</code>&#xFF0C;&#x5728;Python3&#x4E2D;&#x5B83;&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x548C;<code>[0-9]</code>&#x5339;&#x914D;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x548C;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x7684;&#x6570;&#x5B57;&#x5339;&#x914D;&#x3002;</p>
+<p><code>\s</code>&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x5339;&#x914D;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;&#x7A7A;&#x683C;&#xFF0C;tab&#x3001;&#x6362;&#x884C; &#x7B49;&#x3002;</p>
+<p><code>\b</code> &#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;0&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x4ED6;&#x4EC5;&#x4EC5;&#x5728;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x5F00;&#x59CB;&#x6216;&#x7ED3;&#x5C3E;&#x5904;&#x5339;&#x914D;&#xFF0C;&#x8FD9;&#x88AB;&#x79F0;&#x4E3A;&#x8BCD;&#x8FB9;&#x754C;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5FEB;&#x6377;&#x65B9;&#x5F0F;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\w</td>
+<td>&#x4E0E;&#x4EFB;&#x610F;&#x5355;&#x8BCD;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td>\d</td>
+<td>&#x4E0E;&#x4EFB;&#x610F;&#x6570;&#x5B57;&#x5339;&#x914D;</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>&#x5339;&#x914D;&#x7A7A;&#x767D;&#x5B57;&#x7B26;&#xFF0C;&#x6BD4;&#x5982;&#x7A7A;&#x683C; tab &#x6362;&#x884C; &#x7B49;</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x957F;&#x5EA6;&#x4E3A;0&#x7684;&#x5B50;&#x4E32;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;\w&apos;</span>,<span class="hljs-string">&apos;&#x5B66;&#x597D;Python &#x5927;&#x5C55;&#x62F3;&#x811A;&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;\w&apos;</span>,<span class="hljs-string">&apos;python3&apos;</span>)
+c = re.search(<span class="hljs-string">r&apos;\d&apos;</span>,<span class="hljs-string">&apos;&#x7F16;&#x53F7;89757&apos;</span>)
+print(a)
+print(b)
+print(c)
+</code></pre>
+<pre><code>[&apos;&#x5B66;&apos;, &apos;&#x597D;&apos;, &apos;P&apos;, &apos;y&apos;, &apos;t&apos;, &apos;h&apos;, &apos;o&apos;, &apos;n&apos;, &apos;&#x5927;&apos;, &apos;&#x5C55;&apos;, &apos;&#x62F3;&apos;, &apos;&#x811A;&apos;]
+&lt;re.Match object; span=(0, 1), match=&apos;p&apos;&gt;
+&lt;re.Match object; span=(2, 3), match=&apos;8&apos;&gt;
+</code></pre><p>&#x8FD9;&#x91CC;<code>findall</code>&#x4F1A;&#x8FD4;&#x56DE;&#x6240;&#x6709;&#x80FD;&#x5339;&#x914D;&#x7684;&#x503C;&#xFF0C;<code>search</code>&#x53EA;&#x4F1A;&#x8FD4;&#x56DE;&#x7B2C;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x5230;&#x7684;&#x503C;&#x3002;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;\bmaster\b&apos;</span>,<span class="hljs-string">&apos;masterxiao-master-xxx master abc&apos;</span>)  <span class="hljs-comment">#&#x5355;&#x8BCD;&#x5B57;&#x7B26;&#x540E;&#x9762;&#x6216;&#x524D;&#x9762;&#x4E0D;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x5B57;&#x7B26;&#x76F4;&#x63A5;&#x76F8;&#x90BB;</span>
+b = re.search(<span class="hljs-string">&apos;r\bmaster\b&apos;</span>,<span class="hljs-string">&apos;master&apos;</span>)
+
+print(a)
+print(b)
+</code></pre>
+<pre><code>[&apos;master&apos;, &apos;master&apos;]
+None
+</code></pre><pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;\smaster\s&apos;</span>,<span class="hljs-string">&apos;masterxiao master xxx&apos;</span>)
+print(a)
+</code></pre>
+<pre><code>&lt;re.Match object; span=(10, 18), match=&apos; master &apos;&gt;
+</code></pre><p><strong>&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x53D6;&#x53CD;</strong></p>
+<p>&#x4E4B;&#x524D;&#x63D0;&#x5230;&#x4E86;&#x53D6;&#x53CD;&#xFF0C;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x4E5F;&#x53EF;&#x4EE5;&#x53D6;&#x53CD;&#xFF0C; &#x4F8B;&#x5982;&#x5BF9;&#x4E8E; <code>\w</code>&#x7684;&#x53D6;&#x53CD;&#x4E3A;<code>\W</code>&#xFF0C;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x5C06;&#x5C0F;&#x5199;&#x6539;&#x5199;&#x6210;&#x5927;&#x5199;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x8FD9;&#x91CC;<code>\B</code> &#x6709;&#x6240;&#x4E0D;&#x540C;&#xFF0C; \b &#x5339;&#x914D;&#x7684;&#x662F;&#x5728;&#x5355;&#x8BCD;&#x5F00;&#x59CB;&#x6216;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x957F;&#x5EA6;&#x4E3A;<code>0</code>&#x7684;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;<code>\B</code>&#x5339;&#x914D;&#x4E0D;&#x5728;&#x5355;&#x8BCD;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;&#x4F4D;&#x7F6E;&#x7684;&#x957F;&#x5EA6;&#x4E3A;<code>0</code>&#x7684;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#x3002;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;\Bmaster\B&apos;</span>,<span class="hljs-string">&apos;masterxiao master xxx master abc&apos;</span>)  <span class="hljs-comment">#&#x5355;&#x8BCD;&#x5B57;&#x7B26;&#x540E;&#x9762;&#x6216;&#x524D;&#x9762;&#x4E0D;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x5B57;&#x7B26;&#x76F4;&#x63A5;&#x76F8;&#x90BB;</span>
+b = re.search(<span class="hljs-string">r&apos;master\B&apos;</span>,<span class="hljs-string">&apos;masterxiao&apos;</span>)
+
+print(a)
+print(b)
+</code></pre>
+<pre><code>[]
+&lt;re.Match object; span=(0, 6), match=&apos;master&apos;&gt;
+</code></pre><h4 id="4-&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;">4. &#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x59CB;&#x548C;&#x7ED3;&#x675F;</h4>
+<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D; <code>^</code> &#x53EF;&#x4EE5;&#x8868;&#x793A;&#x5F00;&#x59CB;&#xFF0C; <code>$</code>&#x8868;&#x793A;&#x7ED3;&#x675F;&#x3002;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;^python&apos;</span>,<span class="hljs-string">&apos;this code in python3&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;python$&apos;</span>,<span class="hljs-string">&apos;this code in python3&apos;</span>)
+
+c = re.search(<span class="hljs-string">r&apos;^python&apos;</span>,<span class="hljs-string">&apos;python is my favorite&apos;</span>)
+d = re.search(<span class="hljs-string">r&apos;python$&apos;</span>,<span class="hljs-string">&apos;this code in python&apos;</span>)
+
+print(a)
+print(b)
+print(c)
+print(d)
+</code></pre>
+<pre><code>None
+None
+&lt;re.Match object; span=(0, 6), match=&apos;python&apos;&gt;
+&lt;re.Match object; span=(13, 19), match=&apos;python&apos;&gt;
+</code></pre><p>&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x4F8B;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0; <code>^</code>&#x6307;&#x5B9A;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x5F00;&#x59CB;&#xFF0C;<code>$</code>&#x6307;&#x5B9A;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7ED3;&#x675F;&#x3002;</p>
+<h4 id="5&#x4EFB;&#x610F;&#x5B57;&#x7B26;">5.&#x4EFB;&#x610F;&#x5B57;&#x7B26;</h4>
+<p><code>.</code>&#x5B57;&#x7B26;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5FEB;&#x6377;&#x65B9;&#x5F0F;&#x5B57;&#x7B26;&#xFF0C;&#x5B83;&#x4EE3;&#x8868;&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5355;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x4E0D;&#x8FC7;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5B83;<strong>&#x53EA;&#x80FD;&#x51FA;&#x73B0;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x5B57;&#x7B26;&#x7EC4;&#x4EE5;&#x5916;</strong>&#x3002;</p>
+<p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF1A;<font color="red"><code>.</code>&#x5B57;&#x7B26;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4E0D;&#x80FD;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6362;&#x884C;&#xFF08;<code>\n</code>&#xFF09;&#xFF0C;</font>&#xFF0C;&#x4E0D;&#x8FC7;&#x8BA9;<code>.</code>&#x5B57;&#x7B26;&#x4E0E;&#x6362;&#x884C;&#x7B26;&#x5339;&#x914D;&#x4E5F;&#x662F;&#x53EF;&#x80FD;&#x7684;&#xFF0C;&#x4EE5;&#x540E;&#x4F1A;&#x8BA8;&#x8BBA;&#x3002;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;p.th.n&apos;</span>,<span class="hljs-string">&apos;hello python re&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;p.....&apos;</span>,<span class="hljs-string">&apos;&#x5B66;&#x597D; python &#x4EBA;&#x89C1;&#x4EBA;&#x7231;&apos;</span>)
+
+print(a)
+print(b)
+</code></pre>
+<pre><code>&lt;re.Match object; span=(6, 12), match=&apos;python&apos;&gt;
+&lt;re.Match object; span=(3, 9), match=&apos;python&apos;&gt;
+</code></pre><h3 id="&#x53EF;&#x9009;&#x5B57;&#x7B26;">&#x53EF;&#x9009;&#x5B57;&#x7B26;</h3>
+<p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x770B;&#x5230;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x90FD;&#x662F;&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4E0E;&#x88AB;&#x641C;&#x7D22;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x7B26;&#x4FDD;&#x6301;<code>1:1</code>&#x7684;&#x5173;&#x7CFB;&#x3002;</p>
+<p>&#x4E0D;&#x8FC7;&#x6709;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x60F3;&#x8981;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x5355;&#x8BCD;&#x7684;&#x4E0D;&#x540C;&#x5199;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x201C;color&#x201D;&#x548C;&#x201C;colour&#x201D;&#xFF0C;&#x6216;&#x8005;&#x201C;honor&#x201D;&#x4E0E;&#x201C;honour&#x201D;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>?</code> &#x7B26;&#x53F7;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x3001;&#x5B57;&#x7B26;&#x7EC4;&#x6216;&#x5176;&#x4ED6;&#x57FA;&#x672C;&#x5355;&#x5143;&#x53EF;&#x9009;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5F15;&#x64CE;&#x5C06;&#x4F1A;&#x671F;&#x671B;&#x8BE5;&#x5B57;&#x7B26;&#x51FA;&#x73B0;<strong>&#x96F6;&#x6B21;&#x6216;&#x4E00;&#x6B21;</strong>&#x3002;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;honou?r&apos;</span>,<span class="hljs-string">&apos;He Served with honor and distinction&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;honou?r&apos;</span>,<span class="hljs-string">&apos;He Served with honour and distinction&apos;</span>)
+c = re.search(<span class="hljs-string">r&apos;honou?r&apos;</span>,<span class="hljs-string">&apos;He Served with honou and distinction&apos;</span>)
+print(a)
+print(b)
+print(c)
+</code></pre>
+<pre><code>&lt;re.Match object; span=(15, 20), match=&apos;honor&apos;&gt;
+&lt;re.Match object; span=(15, 21), match=&apos;honour&apos;&gt;
+None
+</code></pre><p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x5728;&#x4E0A;&#x8FF0;&#x4E09;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x4E3A;<code>honou?r</code>&#xFF0C;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x7684;&#x662F; <code>honor</code> &#x548C; <code>honour</code> &#x4E0D;&#x80FD;&#x5339;&#x914D; <code>honou</code>&#xFF0C;&#x53EF;&#x4EE5;&#x77E5;&#x9053;&#x7684;&#x662F; <code>?</code> &#x786E;&#x5B9A;&#x4E86;&#x524D;&#x4E00;&#x4E2A;<code>u</code>&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6CA1;&#x6709;<code>u</code>&#xFF0C;&#x662F;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x5339;&#x914D;&#x7684;&#xFF0C;&#x5728;&#x7B2C;&#x4E8C;&#x4E2A;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;<code>u</code>&#x5B58;&#x5728;&#x8FD9;&#x4E5F;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;&#x5728;&#x7B2C;&#x4E09;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;<code>u</code>&#x5B58;&#x5728;&#x4F46;&#x662F;<code>r</code>&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x4E0D;&#x80FD;&#x5339;&#x914D;&#x4E86;&#x3002;</p>
+<h3 id="&#x91CD;&#x590D;">&#x91CD;&#x590D;</h3>
+<p>&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x5B66;&#x4E60;&#x4E86;&#x5173;&#x4E8E;&#x4EC5;&#x51FA;&#x73B0;&#x4E00;&#x6B21;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x5339;&#x914D;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x80AF;&#x5B9A;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x9700;&#x6C42;&#xFF0C;&#x6BD4;&#x5982;&#x8981;&#x5339;&#x914D;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#xFF0C;&#x6BD4;&#x5982;&#x5339;&#x914D;&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#xFF0C;&#x8FD9;&#x4E9B;&#x90FD;&#x662F;&#x5F88;&#x591A;&#x4E2A;&#x6570;&#x5B57;&#x7EC4;&#x6210;&#x7684;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x671F;&#x671B;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7EC4;&#x8FDE;&#x7EED;&#x5339;&#x914D;&#x597D;&#x51E0;&#x6B21;&#x3002;</p>
+<p>&#x5728;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7EC4;&#x540E;&#x52A0;&#x4E0A;<code>{N}</code> &#x5C31;&#x53EF;&#x4EE5;&#x8868;&#x793A; <code>{N}</code> &#x4E4B;&#x524D;&#x7684;&#x5B57;&#x7B26;&#x7EC4;&#x51FA;&#x73B0;<code>N</code>&#x6B21;&#x3002;</p>
+<pre><code class="lang-python">re.findall(<span class="hljs-string">r&apos;[\d]{4}-[\d]{7}&apos;</span>,<span class="hljs-string">&apos;&#x5F20;&#x4E09;&#xFF1A;0731-8825951&#xFF0C;&#x674E;&#x56DB;&#xFF1A;0733-8794561&apos;</span>)
+</code></pre>
+<pre><code>[&apos;0731-8825951&apos;, &apos;0733-8794561&apos;]
+</code></pre><h4 id="1-&#x91CD;&#x590D;&#x533A;&#x95F4;">1. &#x91CD;&#x590D;&#x533A;&#x95F4;</h4>
+<p>&#x53EF;&#x80FD;&#x6709;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x4E0D;&#x77E5;&#x9053;&#x5177;&#x4F53;&#x8981;&#x5339;&#x914D;&#x5B57;&#x7B26;&#x7EC4;&#x8981;&#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;&#xFF0C;&#x6BD4;&#x5982;&#x8EAB;&#x4EFD;&#x8BC1;&#x6709;<code>15</code>&#x4F4D;&#x4E5F;&#x6709;<code>18</code>&#x4F4D;&#x7684;&#x3002;</p>
+<p>&#x8FD9;&#x91CC;&#x91CD;&#x590D;&#x533A;&#x95F4;&#x5C31;&#x53EF;&#x4EE5;&#x51FA;&#x573A;&#x4E86;&#xFF0C;&#x8BED;&#x6CD5;&#xFF1A;<code>{M,N}</code>&#xFF0C;<code>M</code>&#x662F;&#x4E0B;&#x754C;&#x800C;<code>N</code>&#x662F;&#x4E0A;&#x754C;&#x3002;</p>
+<p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;[\d]{3,4}&apos;</span>,<span class="hljs-string">&apos;0731&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;[\d]{3,4}&apos;</span>,<span class="hljs-string">&apos;073&apos;</span>)
+
+print(a)
+print(b)
+</code></pre>
+<pre><code>&lt;re.Match object; span=(0, 4), match=&apos;0731&apos;&gt;
+&lt;re.Match object; span=(0, 3), match=&apos;073&apos;&gt;
+</code></pre><p>&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x53D1;&#x73B0;<code>[\d]{3,4}</code> &#x65E2;&#x53EF;&#x4EE5;&#x5339;&#x914D;<code>3</code>&#x4E2A;&#x6570;&#x5B57;&#x4E5F;&#x53EF;&#x4EE5;&#x5339;&#x914D;<code>4</code>&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x4E0D;&#x8FC7;&#x5F53;&#x6709;<code>4</code>&#x4E2A;&#x6570;&#x5B57;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F18;&#x5148;&#x5339;&#x914D;&#x7684;&#x662F;<code>4</code>&#x4E2A;&#x6570;&#x5B57;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x9ED8;&#x8BA4;&#x662F;<strong>&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;</strong>&#xFF0C;&#x5373;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x5339;&#x914D;&#x66F4;&#x591A;&#x5B57;&#x7B26;&#xFF0C;&#x800C;&#x8981;&#x4F7F;&#x7528;&#x975E;&#x8D2A;&#x5A6A;&#x6A21;&#x5F0F;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x5728;&#x8868;&#x8FBE;&#x5F0F;&#x540E;&#x9762;&#x52A0;&#x4E0A; <code>?</code>&#x53F7;&#x3002;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;[\d]{3,4}?&apos;</span>,<span class="hljs-string">&apos;0731&apos;</span>)
+b = re.search(<span class="hljs-string">r&apos;[\d]{3,4}?&apos;</span>,<span class="hljs-string">&apos;073&apos;</span>)
+
+print(a)
+print(b)
+</code></pre>
+<pre><code>&lt;re.Match object; span=(0, 3), match=&apos;073&apos;&gt;
+&lt;re.Match object; span=(0, 3), match=&apos;073&apos;&gt;
+</code></pre><p>&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x8FD9;&#x6837;&#x5B50;&#x4F7F;&#x7528;&#x5C31;&#x53EA;&#x80FD;&#x5339;&#x914D;<code>3</code>&#x4E2A;&#x6570;&#x5B57;&#x800C;&#x65E0;&#x6CD5;&#x5339;&#x914D;<code>4</code>&#x4E2A;&#x4E86;&#xFF0C;</p>
+<h4 id="2-&#x5F00;&#x95ED;&#x533A;&#x95F4;">2. &#x5F00;&#x95ED;&#x533A;&#x95F4;</h4>
+<p>&#x6709;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x53EF;&#x80FD;&#x9047;&#x5230;&#x5B57;&#x7B26;&#x7EC4;&#x7684;&#x91CD;&#x590D;&#x6B21;&#x6570;&#x6CA1;&#x6709;&#x8FB9;&#x754C;&#xFF1A;</p>
+<pre><code class="lang-python">a = re.search(<span class="hljs-string">r&apos;[\d]{1,}&apos;</span>,<span class="hljs-string">&apos;0731 xxx&apos;</span>)
+
+print(a)
+</code></pre>
+<pre><code>&lt;re.Match object; span=(0, 4), match=&apos;0731&apos;&gt;
+</code></pre><p>&#x95ED;&#x533A;&#x95F4;&#x4E0D;&#x5199;&#x5373;&#x53EF;&#x8868;&#x793A;&#x5339;&#x914D;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x3002;</p>
+<h4 id="3-&#x901F;&#x5199;">3. &#x901F;&#x5199;</h4>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E24;&#x4E2A;&#x901F;&#x5199;&#x5B57;&#x7B26;&#x6307;&#x5B9A;&#x5E38;&#x89C1;&#x7684;&#x91CD;&#x590D;&#x60C5;&#x51B5;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>+</code> &#x5339;&#x914D;<code>1</code>&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#xFF0C;&#x4F7F;&#x7528; <code>*</code>&#x4EE3;&#x8868;<code>0</code>&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x3002;</p>
+<pre><code class="lang-python">a = re.findall(<span class="hljs-string">r&apos;[\d]+&apos;</span>,<span class="hljs-string">&apos;0731-8859456&apos;</span>)
+b = re.findall(<span class="hljs-string">r&apos;[\d]*&apos;</span>,<span class="hljs-string">&apos;&#x7F16;&#x53F7;89758&apos;</span>)
+
+print(a)
+print(b)
+</code></pre>
+<pre><code>[&apos;0731&apos;, &apos;8859456&apos;]
+[&apos;&apos;, &apos;&apos;, &apos;89758&apos;, &apos;&apos;]
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Python中的正则表达式.html" class="navigation navigation-prev " aria-label="Previous page: 1.2 Python中的正则表达式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="分组.html" class="navigation navigation-next " aria-label="Next page: 1.4 分组">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.3 基本正则表达式","level":"1.2.3","depth":2,"next":{"title":"1.4 分组","level":"1.2.4","depth":2,"path":"notes/分组.md","ref":"notes/分组.md","articles":[]},"previous":{"title":"1.2 Python中的正则表达式","level":"1.2.2","depth":2,"path":"notes/Python中的正则表达式.md","ref":"notes/Python中的正则表达式.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/基本正则表达式.md","mtime":"2019-05-08T08:40:56.051Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T15:13:08.843Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

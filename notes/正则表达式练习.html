@@ -1,0 +1,687 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.8 正则表达式练习 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Python爬虫学习目标.html" />
+    
+    
+    <link rel="prev" href="替换与正则表达式编译.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    第一章：正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="正则表达式入门.html">
+            
+                <a href="正则表达式入门.html">
+            
+                    
+                    1.1 正则表达式入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Python中的正则表达式.html">
+            
+                <a href="Python中的正则表达式.html">
+            
+                    
+                    1.2 Python中的正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="基本正则表达式.html">
+            
+                <a href="基本正则表达式.html">
+            
+                    
+                    1.3 基本正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="分组.html">
+            
+                <a href="分组.html">
+            
+                    
+                    1.4 分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="先行断言.html">
+            
+                <a href="先行断言.html">
+            
+                    
+                    1.5 先行断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="标记.html">
+            
+                <a href="标记.html">
+            
+                    
+                    1.6 标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="替换与正则表达式编译.html">
+            
+                <a href="替换与正则表达式编译.html">
+            
+                    
+                    1.7 替换与正则编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.8" data-path="正则表达式练习.html">
+            
+                <a href="正则表达式练习.html">
+            
+                    
+                    1.8 正则表达式练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Python爬虫学习目标.html">
+            
+                <a href="Python爬虫学习目标.html">
+            
+                    
+                    第二章：爬虫与Requests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Requests的简单使用.html">
+            
+                <a href="Requests的简单使用.html">
+            
+                    
+                    2.1 Requests的简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="深入了解Requests.html">
+            
+                <a href="深入了解Requests.html">
+            
+                    
+                    2.2 深入了解Requets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="结构化与非结构化.html">
+            
+                <a href="结构化与非结构化.html">
+            
+                    
+                    第三章：非结构化与结构化数据提取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="正则抓取.html">
+            
+                <a href="正则抓取.html">
+            
+                    
+                    3.1 使用正则的爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="xpath与XML.html">
+            
+                <a href="xpath与XML.html">
+            
+                    
+                    3.2 Xpath与XML类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="lxml.html">
+            
+                <a href="lxml.html">
+            
+                    
+                    3.3 LXML库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Xpath爬虫案例.html">
+            
+                <a href="Xpath爬虫案例.html">
+            
+                    
+                    3.4 案例：贴吧图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Json与JsonPath.html">
+            
+                <a href="Json与JsonPath.html">
+            
+                    
+                    3.5 Json与Json数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="实例：糗事百科网站抓取.html">
+            
+                <a href="实例：糗事百科网站抓取.html">
+            
+                    
+                    3.6 糗事百科网站爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >1.8 正则表达式练习</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7EC3;&#x4E60;">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7EC3;&#x4E60;</h2>
+<p>&#x7EB8;&#x4E0A;&#x5F97;&#x6765;&#x7EC8;&#x89C9;&#x6D45;&#xFF0C;&#x6B32;&#x77E5;&#x6B64;&#x4E8B;&#x987B;&#x8EAC;&#x884C;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x505A;&#x4E00;&#x4E9B;&#x7EC3;&#x4E60;&#xFF0C;&#x6765;&#x8FD0;&#x7528;&#x5B66;&#x5230;&#x7684;&#x77E5;&#x8BC6;&#xFF1A;</p>
+<h3 id="&#x7B2C;&#x4E00;&#x9898;&#xFF1A;">&#x7B2C;&#x4E00;&#x9898;&#xFF1A;</h3>
+<p>&#x539F;&#x59CB;&#x6587;&#x672C;&#xFF1A;</p>
+<pre><code>    &#x5F20;&#x4F1F; 86-14870293148  \n
+   &#x738B;&#x4F1F;   +86-13285654569    \n
+    &#x738B;&#x82B3;        15856529115    \n
+ &#x674E;&#x4F1F;         13022816340  \n
+  &#x738B;&#x79C0;&#x82F1;   (86)14785720656     \n
+   &#x674E;&#x79C0;&#x82F1;    17201444672    \n
+    &#x674E;&#x5A1C;         15682812452     \n
+    &#x5F20;&#x79C0;&#x82F1;         14326967740     \n
+    &#x5218;&#x4F1F;  15146435743    \n
+   &#x5F20;&#x654F;        (86)-17712576838   \n
+    &#x674E;&#x9759;       86 14295083635  \n
+    &#x5F20;&#x4E3D;     (+86) 13722348123   \n
+   &#x738B;&#x9759;         17587918887   \n
+  &#x738B;&#x4E3D;    15493106739    \n
+ &#x674E;&#x5F3A;      13786842977   \n
+ &#x5F20;&#x9759;         86-15542304386     \n
+    &#x674E;&#x654F;         15642387356 \n
+   &#x738B;&#x654F;          18627216756  \n
+ &#x738B;&#x78CA;       17206185726   \n
+    &#x674E;&#x519B;      17857426238     \n
+   &#x5218;&#x6D0B;        17345352790     \n
+</code></pre><p>&#x8981;&#x6C42;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p>1.&#x63D0;&#x53D6;&#x6240;&#x6709; 11 &#x4F4D;&#x6570;&#x5B57;&#x7535;&#x8BDD;&#x53F7;&#x7801;</p>
+<p>2.&#x63D0;&#x53D6;&#x6240;&#x6709; 18 &#x6216; 13 &#x5F00;&#x5934;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;</p>
+<p>3.&#x63D0;&#x53D6;&#x6240;&#x6709;&#x201C;&#x738B;&#x201D;&#x59D3;&#x540C;&#x5B66;&#x7684;&#x540D;&#x5B57;</p>
+<p>4.&#x63D0;&#x53D6;&#x6240;&#x6709;&#x201C;&#x5F20;&#x201D;&#x59D3;&#x540C;&#x5B66;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801; &#x683C;&#x5F0F;&#x4E3A; &#x5F20;XX&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x662F;&#xFF1A; XXXXXX</p>
+<p>5.&#x91CD;&#x65B0;&#x6392;&#x7248;&#xFF0C;&#x6392;&#x7248;&#x6210;&#x7EDF;&#x4E00;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x53BB;&#x6389;&#x56FD;&#x5BB6;&#x533A;&#x53F7;&#x3002;</p>
+<p>&#x76EE;&#x6807;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>[&apos;14870293148&apos;, &apos;13285654569&apos;, &apos;15856529115&apos;, &apos;13022816340&apos;, &apos;14785720656&apos;, &apos;17201444672&apos;, &apos;15682812452&apos;, &apos;14326967740&apos;, &apos;15146435743&apos;, &apos;17712576838&apos;, &apos;14295083635&apos;, &apos;13722348123&apos;, &apos;17587918887&apos;, &apos;15493106739&apos;, &apos;13786842977&apos;, &apos;15542304386&apos;, &apos;15642387356&apos;, &apos;18627216756&apos;, &apos;17206185726&apos;, &apos;17857426238&apos;, &apos;17345352790&apos;]
+[&apos;13285654569&apos;, &apos;13022816340&apos;, &apos;13722348123&apos;, &apos;13786842977&apos;, &apos;18627216756&apos;]
+[&apos;&#x738B;&#x4F1F;&apos;, &apos;&#x738B;&#x82B3;&apos;, &apos;&#x738B;&#x79C0;&#x82F1;&apos;, &apos;&#x738B;&#x9759;&apos;, &apos;&#x738B;&#x4E3D;&apos;, &apos;&#x738B;&#x654F;&apos;, &apos;&#x738B;&#x78CA;&apos;]
+&#x5F20;&#x4F1F;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x662F;&#xFF1A;14870293148
+&#x5F20;&#x79C0;&#x82F1;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x662F;&#xFF1A;14326967740
+&#x5F20;&#x654F;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x662F;&#xFF1A;17712576838
+&#x5F20;&#x4E3D;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x662F;&#xFF1A;13722348123
+&#x5F20;&#x9759;&#x7684;&#x7535;&#x8BDD;&#x53F7;&#x7801;&#x662F;&#xFF1A;15542304386
+&#x5F20;&#x4F1F;  14870293148
+&#x738B;&#x4F1F;  13285654569
+&#x738B;&#x82B3;  15856529115
+&#x674E;&#x4F1F;  13022816340
+&#x738B;&#x79C0;&#x82F1;  14785720656
+&#x674E;&#x79C0;&#x82F1;  17201444672
+&#x674E;&#x5A1C;  15682812452
+&#x5F20;&#x79C0;&#x82F1;  14326967740
+&#x5218;&#x4F1F;  15146435743
+&#x5F20;&#x654F;  17712576838
+&#x674E;&#x9759;  14295083635
+&#x5F20;&#x4E3D;  13722348123
+&#x738B;&#x9759;  17587918887
+&#x738B;&#x4E3D;  15493106739
+&#x674E;&#x5F3A;  13786842977
+&#x5F20;&#x9759;  15542304386
+&#x674E;&#x654F;  15642387356
+&#x738B;&#x654F;  18627216756
+&#x738B;&#x78CA;  17206185726
+&#x674E;&#x519B;  17857426238
+&#x5218;&#x6D0B;  17345352790
+</code></pre><h3 id="&#x7B2C;&#x4E8C;&#x9898;&#xFF1A;">&#x7B2C;&#x4E8C;&#x9898;&#xFF1A;</h3>
+<p>&#x539F;&#x59CB;&#x6587;&#x672C;&#xFF1A;</p>
+<pre><code>  &#x5F20;&#x4F1F;         1996.8.24 
+   &#x738B;&#x4F1F;      1993&#x5E74;10&#x6708;21&#x65E5;   
+ &#x738B;&#x82B3;         1997-7-24   
+   &#x674E;&#x4F1F;       1996.3.21  
+   &#x738B;&#x79C0;&#x82F1;        1991.12.0  
+   &#x674E;&#x79C0;&#x82F1;     1994-7-5    
+   &#x674E;&#x5A1C;       1999.1.28   
+   &#x5F20;&#x79C0;&#x82F1;        1998-2-24   &#x5218;&#x4F1F;     1996.5.28      &#x5F20;&#x654F;      1996.10.26   
+  &#x674E;&#x9759;      1993&#x5E74;1&#x6708;6&#x65E5;    
+   &#x5F20;&#x4E3D;        1992.5.21     &#x738B;&#x9759;  1998-5-1  
+    &#x738B;&#x4E3D;   1994-4-14  
+   &#x674E;&#x5F3A;  1993.8.13   
+   &#x5F20;&#x9759;          1998&#x5E74;1&#x6708;5&#x65E5;   &#x674E;&#x654F;    1993-8-21  
+   &#x738B;&#x654F;      1997-3-7    
+   &#x738B;&#x78CA;     1999-3-18    
+  &#x674E;&#x519B;         1990-12-18  
+    &#x5218;&#x6D0B;   1995&#x5E74;5&#x6708;7&#x65E5;
+</code></pre><ol>
+<li>&#x63D0;&#x53D6;&#x6240;&#x6709;&#x65E5;&#x671F;</li>
+<li>&#x63D0;&#x53D6;&#x6240;&#x6709; 1996 &#x5E74;&#x4EE5;&#x524D;&#x51FA;&#x751F;&#x7684;&#x5B66;&#x751F;</li>
+<li>&#x91CD;&#x65B0;&#x6392;&#x7248;  &#x8981;&#x6C42;&#x4EE5;&#xFF1A;&#x5F20;&#x4F1F;&#xFF1A; 1990 &#x5E74; 9 &#x6708; 15 &#x65E5; &#x683C;&#x5F0F;</li>
+<li>&#x628A;&#x6240;&#x6709; 1996 &#x5E74;&#x4EE5;&#x524D;&#x51FA;&#x751F;&#x7684;&#x5B66;&#x751F;&#x51FA;&#x751F;&#x5E74;&#x4EFD;&#x6539;&#x4E3A; 1996 &#x5E76;&#x6392;&#x7248;</li>
+<li>&#x63D0;&#x53D6;&#x751F;&#x65E5; &#x683C;&#x5F0F;&#xFF1A;&#x5F20;&#x4F1F;&#x7684;&#x751F;&#x65E5;&#x662F;11&#x6708;15&#x53F7;</li>
+</ol>
+<p>&#x76EE;&#x6807;&#x7ED3;&#x679C;&#xFF1A;</p>
+<pre><code>[&apos;1996.8.24&apos;, &apos;1993&#x5E74;10&#x6708;21&#x65E5;&apos;, &apos;1997-7-24&apos;, &apos;1996.3.21&apos;, &apos;1991.12.0&apos;, &apos;1994-7-5&apos;, &apos;1999.1.28&apos;, &apos;1998-2-24&apos;, &apos;1996.5.28&apos;, &apos;1996.10.26&apos;, &apos;1993&#x5E74;1&#x6708;6&#x65E5;&apos;, &apos;1992.5.21&apos;, &apos;1998-5-1&apos;, &apos;1994-4-14&apos;, &apos;1993.8.13&apos;, &apos;1998&#x5E74;1&#x6708;5&#x65E5;&apos;, &apos;1993-8-21&apos;, &apos;1997-3-7&apos;, &apos;1999-3-18&apos;, &apos;1990-12-18&apos;, &apos;1995&#x5E74;5&#x6708;7&#x65E5;&apos;]
+
+
+[&apos;&#x738B;&#x4F1F;      1993&#x5E74;10&#x6708;21&#x65E5;&apos;, &apos;&#x738B;&#x79C0;&#x82F1;        1991.12.0&apos;, &apos;&#x674E;&#x79C0;&#x82F1;     1994-7-5&apos;, &apos;&#x674E;&#x9759;      1993&#x5E74;1&#x6708;6&#x65E5;&apos;, &apos;&#x5F20;&#x4E3D;        1992.5.21&apos;, &apos;&#x738B;&#x4E3D;   1994-4-14&apos;, &apos;&#x674E;&#x5F3A;  1993.8.13&apos;, &apos;&#x674E;&#x654F;    1993-8-21&apos;, &apos;&#x674E;&#x519B;         1990-12-18&apos;, &apos;&#x5218;&#x6D0B;   1995&#x5E74;5&#x6708;7&#x65E5;&apos;]
+
+
+&#x5F20;&#x4F1F;  1996 &#x5E74; 8 &#x6708; 24 &#x65E5; 
+&#x738B;&#x4F1F;  1993 &#x5E74; 10 &#x6708; 21 &#x65E5; 
+&#x738B;&#x82B3;  1997 &#x5E74; 7 &#x6708; 24 &#x65E5; 
+&#x674E;&#x4F1F;  1996 &#x5E74; 3 &#x6708; 21 &#x65E5; 
+&#x738B;&#x79C0;&#x82F1;  1991 &#x5E74; 12 &#x6708; 0 &#x65E5; 
+&#x674E;&#x79C0;&#x82F1;  1994 &#x5E74; 7 &#x6708; 5 &#x65E5; 
+&#x674E;&#x5A1C;  1999 &#x5E74; 1 &#x6708; 28 &#x65E5; 
+&#x5F20;&#x79C0;&#x82F1;  1998 &#x5E74; 2 &#x6708; 24 &#x65E5; 
+&#x5218;&#x4F1F;  1996 &#x5E74; 5 &#x6708; 28 &#x65E5; 
+&#x5F20;&#x654F;  1996 &#x5E74; 10 &#x6708; 26 &#x65E5; 
+&#x674E;&#x9759;  1993 &#x5E74; 1 &#x6708; 6 &#x65E5; 
+&#x5F20;&#x4E3D;  1992 &#x5E74; 5 &#x6708; 21 &#x65E5; 
+&#x738B;&#x9759;  1998 &#x5E74; 5 &#x6708; 1 &#x65E5; 
+&#x738B;&#x4E3D;  1994 &#x5E74; 4 &#x6708; 14 &#x65E5; 
+&#x674E;&#x5F3A;  1993 &#x5E74; 8 &#x6708; 13 &#x65E5; 
+&#x5F20;&#x9759;  1998 &#x5E74; 1 &#x6708; 5 &#x65E5; 
+&#x674E;&#x654F;  1993 &#x5E74; 8 &#x6708; 21 &#x65E5; 
+&#x738B;&#x654F;  1997 &#x5E74; 3 &#x6708; 7 &#x65E5; 
+&#x738B;&#x78CA;  1999 &#x5E74; 3 &#x6708; 18 &#x65E5; 
+&#x674E;&#x519B;  1990 &#x5E74; 12 &#x6708; 18 &#x65E5; 
+&#x5218;&#x6D0B;  1995 &#x5E74; 5 &#x6708; 7 &#x65E5; 
+
+
+&#x5F20;&#x4F1F;  1996&#x5E74;8&#x6708;24&#x65E5;
+&#x738B;&#x4F1F;  1996&#x5E74;10&#x6708;21&#x65E5;
+&#x674E;&#x4F1F;  1996&#x5E74;3&#x6708;21&#x65E5;
+&#x738B;&#x79C0;&#x82F1;  1996&#x5E74;12&#x6708;0&#x65E5;
+&#x674E;&#x79C0;&#x82F1;  1996&#x5E74;7&#x6708;5&#x65E5;
+&#x5218;&#x4F1F;  1996&#x5E74;5&#x6708;28&#x65E5;
+&#x5F20;&#x654F;  1996&#x5E74;10&#x6708;26&#x65E5;
+&#x674E;&#x9759;  1996&#x5E74;1&#x6708;6&#x65E5;
+&#x5F20;&#x4E3D;  1996&#x5E74;5&#x6708;21&#x65E5;
+&#x738B;&#x4E3D;  1996&#x5E74;4&#x6708;14&#x65E5;
+&#x674E;&#x5F3A;  1996&#x5E74;8&#x6708;13&#x65E5;
+&#x674E;&#x654F;  1996&#x5E74;8&#x6708;21&#x65E5;
+&#x674E;&#x519B;  1996&#x5E74;12&#x6708;18&#x65E5;
+&#x5218;&#x6D0B;  1996&#x5E74;5&#x6708;7&#x65E5;
+
+
+#&#x8FD9;&#x91CC;&#x5077;&#x4E86;&#x4E2A;&#x61D2;&#x6CA1;&#x6709;&#x6574;&#x683C;&#x5F0F;
+[(&apos;&#x5F20;&#x4F1F;&apos;, &apos;8&apos;, &apos;24&apos;), (&apos;&#x738B;&#x4F1F;&apos;, &apos;10&apos;, &apos;21&apos;), (&apos;&#x738B;&#x82B3;&apos;, &apos;7&apos;, &apos;24&apos;), (&apos;&#x674E;&#x4F1F;&apos;, &apos;3&apos;, &apos;21&apos;), (&apos;&#x738B;&#x79C0;&#x82F1;&apos;, &apos;12&apos;, &apos;0&apos;), (&apos;&#x674E;&#x79C0;&#x82F1;&apos;, &apos;7&apos;, &apos;5&apos;), (&apos;&#x674E;&#x5A1C;&apos;, &apos;1&apos;, &apos;28&apos;), (&apos;&#x5F20;&#x79C0;&#x82F1;&apos;, &apos;2&apos;, &apos;24&apos;), (&apos;&#x5218;&#x4F1F;&apos;, &apos;5&apos;, &apos;28&apos;), (&apos;&#x5F20;&#x654F;&apos;, &apos;10&apos;, &apos;26&apos;), (&apos;&#x674E;&#x9759;&apos;, &apos;1&apos;, &apos;6&apos;), (&apos;&#x5F20;&#x4E3D;&apos;, &apos;5&apos;, &apos;21&apos;), (&apos;&#x738B;&#x9759;&apos;, &apos;5&apos;, &apos;1&apos;), (&apos;&#x738B;&#x4E3D;&apos;, &apos;4&apos;, &apos;14&apos;), (&apos;&#x674E;&#x5F3A;&apos;, &apos;8&apos;, &apos;13&apos;), (&apos;&#x5F20;&#x9759;&apos;, &apos;1&apos;, &apos;5&apos;), (&apos;&#x674E;&#x654F;&apos;, &apos;8&apos;, &apos;21&apos;), (&apos;&#x738B;&#x654F;&apos;, &apos;3&apos;, &apos;7&apos;), (&apos;&#x738B;&#x78CA;&apos;, &apos;3&apos;, &apos;18&apos;), (&apos;&#x674E;&#x519B;&apos;, &apos;12&apos;, &apos;18&apos;), (&apos;&#x5218;&#x6D0B;&apos;, &apos;5&apos;, &apos;7&apos;)]
+</code></pre><h2 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x9636;&#x7EC3;&#x4E60;">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x9636;&#x7EC3;&#x4E60;</h2>
+<h3 id="&#x7B2C;&#x4E00;&#x9898;">&#x7B2C;&#x4E00;&#x9898;</h3>
+<ol>
+<li><p>&#x90AE;&#x7BB1;&#x9A8C;&#x8BC1;</p>
+</li>
+<li><p>&#x5BC6;&#x7801;&#x5F3A;&#x5EA6;&#x9A8C;&#x8BC1;&#xFF08;&#x6700;&#x5C11;&#x516B;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;&#x81F3;&#x5C11;&#x4E00;&#x4E2A;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x4E00;&#x4E2A;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF09;</p>
+</li>
+<li><p>18 &#x4F4D;&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x9A8C;&#x8BC1;</p>
+</li>
+<li><p>IP &#x5730;&#x5740;&#x9A8C;&#x8BC1;</p>
+</li>
+<li><p>&#x624B;&#x673A;&#x53F7;&#x9A8C;&#x8BC1;</p>
+</li>
+</ol>
+<h3 id="&#x7B2C;&#x4E8C;&#x9898;">&#x7B2C;&#x4E8C;&#x9898;</h3>
+<p>&#x539F;&#x59CB;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code>&lt;div class=&quot;hotnews&quot;&gt;
+&lt;div class=&quot;imgview&quot; id=&quot;imgView&quot;&gt;&lt;a href=&quot;https://xinwen.eastday.com/a/n181211075002407.html?qid=news.baidu.com&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;https://imgsa.baidu.com/news/q%3D100/sign=cdae0fb78a94a4c20c23e32b3ef51bac/cefc1e178a82b90151b62d8b7e8da9773912ef6b.jpg&quot;&gt;&lt;/a&gt;&lt;/div&gt;&lt;ul&gt;&lt;li class=&quot;hdline0&quot;&gt;
+&lt;a href=&quot;http://www.xinhuanet.com/politics/xxjxs/2018-12/11/c_1123834898.htm&quot; target=&quot;_blank&quot; class=&quot;a3&quot;&gt;
+&#x4E60;&#x8FD1;&#x5E73;&#x7684;&#x6539;&#x9769;&#x4E4B;&#x201C;&#x55BB;&#x201D; &lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;hdline1&quot;&gt;
+&lt;a href=&quot;http://news.cri.cn/20181211/313376c7-77cc-abff-3a81-bd855c0a8577.html&quot; target=&quot;_blank&quot;&gt;
+&#x300A;&#x5FC5;&#x7531;&#x4E4B;&#x8DEF;&#x300B;&#x5BA3;&#x4F20;&#x7247;&lt;/a&gt;
+&lt;i style=&quot;font-size: 12px&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;a href=&quot;http://politics.gmw.cn/2018-12/11/content_32146726.htm&quot; target=&quot;_blank&quot;&gt;
+&#x4E3B;&#x9898;&#x6B4C;&#x300A;&#x68A6;&#x60F3;&#x9633;&#x5149;&#x300B;&#x53D1;&#x5E03; &lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;hdline2&quot;&gt;
+&lt;img src=&quot;https://imgsa.baidu.com/news/q%3D100/sign=ab45ee53bbfd5266a12b38149b199799/f9198618367adab46063f9fb86d4b31c8601e4d3.jpg&quot;&gt;&lt;a href=&quot;http://politics.people.com.cn/n1/2018/1211/c1001-30458946.html&quot; target=&quot;_blank&quot; class=&quot;a3&quot;&gt;
+&#x3010;&#x592E;&#x89C6;&#x5FEB;&#x8BC4;&#x3011;&#x575A;&#x6301;&#x4E2D;&#x56FD;&#x7279;&#x8272;&#x4EBA;&#x6743;&#x53D1;&#x5C55;&#x9053;&#x8DEF;&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;hdline3&quot;&gt;
+&lt;a href=&quot;http://news.cri.cn/20181210/384ab948-e36b-b455-9d97-8eb05172c179.html&quot; target=&quot;_blank&quot;&gt;&#x540C;&#x821F;&#x5171;&#x6D4E;&lt;/a&gt;
+&lt;i style=&quot;font-size: 12px&quot;&gt;&amp;nbsp;&lt;/i&gt;&lt;a href=&quot;http://news.cctv.com/2018/12/10/ARTI9v2GwcDNkh8obJh2vnUy181210.shtml&quot; target=&quot;_blank&quot;&gt;
+&#x300A;&#x6539;&#x9769;&#x5F00;&#x653E; &#x5173;&#x952E;&#x4E00;&#x62DB;&#x300B;&#x7B2C;&#x4E00;&#x96C6;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class=&quot;hdline4&quot;&gt;
+&lt;a href=&quot;http://news.cctv.com/2018/12/10/ARTISzd4ekNLNB88EFFtMgB7181210.shtml&quot; target=&quot;_blank&quot; class=&quot;a3&quot;&gt;
+&#x3010;&#x6570;&#x8BF4;&#x6539;&#x9769;&#x5F00;&#x653E;40&#x5E74;&#x3011;40&#x5E74;&#x51CF;&#x8D2B;7.4&#x4EBF;&#x4EBA;&lt;/a&gt;&lt;/li&gt;
+&lt;li class=&quot;hdline5&quot;&gt;
+&lt;a href=&quot;http://news.ifeng.com/a/20181211/60188943_0.shtml?_zbs_baidu_news&quot; target=&quot;_blank&quot;&gt;&#x738B;&#x5C90;&#x5C71;&#x51FA;&#x5E2D;&#x7684;&#x8FD9;&#x4E2A;&#x6D3B;&#x52A8;&#xFF0C;&#x6709;&#x4EC0;&#x4E48;&#x6765;&#x5934;&#xFF1F;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre><ol>
+<li><p>&#x63D0;&#x53D6;&#x6240;&#x6709; HTML &#x6807;&#x7B7E;</p>
+</li>
+<li><p>&#x6E05;&#x6D17;&#x6240;&#x6709; HTML &#x6807;&#x7B7E;</p>
+</li>
+<li><p>&#x63D0;&#x53D6;&#x6240;&#x6709; URL</p>
+</li>
+<li><p>&#x63D0;&#x53D6;&#x6240;&#x6709; JPG &#x56FE;&#x7247;&#x7684; URL</p>
+</li>
+<li><p>&#x63D0;&#x53D6;&#x6240;&#x6709;&#x4E2D;&#x6587;&#x548C;&#x4E2D;&#x6587;&#x6807;&#x70B9;</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="替换与正则表达式编译.html" class="navigation navigation-prev " aria-label="Previous page: 1.7 替换与正则编译">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Python爬虫学习目标.html" class="navigation navigation-next " aria-label="Next page: 第二章：爬虫与Requests">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.8 正则表达式练习","level":"1.2.8","depth":2,"next":{"title":"第二章：爬虫与Requests","level":"1.3","depth":1,"path":"notes/Python爬虫学习目标.md","ref":"notes/Python爬虫学习目标.md","articles":[{"title":"2.1 Requests的简单使用","level":"1.3.1","depth":2,"path":"notes/Requests的简单使用.md","ref":"notes/Requests的简单使用.md","articles":[]},{"title":"2.2 深入了解Requets","level":"1.3.2","depth":2,"path":"notes/深入了解Requests.md","ref":"notes/深入了解Requests.md","articles":[]}]},"previous":{"title":"1.7 替换与正则编译","level":"1.2.7","depth":2,"path":"notes/替换与正则表达式编译.md","ref":"notes/替换与正则表达式编译.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/正则表达式练习.md","mtime":"2019-05-07T14:41:24.536Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T15:13:08.843Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

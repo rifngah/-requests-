@@ -1,0 +1,867 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3.2 Xpath与XML类库 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lxml.html" />
+    
+    
+    <link rel="prev" href="正则抓取.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="正则表达式.html">
+            
+                <a href="正则表达式.html">
+            
+                    
+                    第一章：正则表达式
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="正则表达式入门.html">
+            
+                <a href="正则表达式入门.html">
+            
+                    
+                    1.1 正则表达式入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Python中的正则表达式.html">
+            
+                <a href="Python中的正则表达式.html">
+            
+                    
+                    1.2 Python中的正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="基本正则表达式.html">
+            
+                <a href="基本正则表达式.html">
+            
+                    
+                    1.3 基本正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="分组.html">
+            
+                <a href="分组.html">
+            
+                    
+                    1.4 分组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="先行断言.html">
+            
+                <a href="先行断言.html">
+            
+                    
+                    1.5 先行断言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="标记.html">
+            
+                <a href="标记.html">
+            
+                    
+                    1.6 标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="替换与正则表达式编译.html">
+            
+                <a href="替换与正则表达式编译.html">
+            
+                    
+                    1.7 替换与正则编译
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="正则表达式练习.html">
+            
+                <a href="正则表达式练习.html">
+            
+                    
+                    1.8 正则表达式练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Python爬虫学习目标.html">
+            
+                <a href="Python爬虫学习目标.html">
+            
+                    
+                    第二章：爬虫与Requests
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Requests的简单使用.html">
+            
+                <a href="Requests的简单使用.html">
+            
+                    
+                    2.1 Requests的简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="深入了解Requests.html">
+            
+                <a href="深入了解Requests.html">
+            
+                    
+                    2.2 深入了解Requets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="结构化与非结构化.html">
+            
+                <a href="结构化与非结构化.html">
+            
+                    
+                    第三章：非结构化与结构化数据提取
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="正则抓取.html">
+            
+                <a href="正则抓取.html">
+            
+                    
+                    3.1 使用正则的爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.2" data-path="xpath与XML.html">
+            
+                <a href="xpath与XML.html">
+            
+                    
+                    3.2 Xpath与XML类库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="lxml.html">
+            
+                <a href="lxml.html">
+            
+                    
+                    3.3 LXML库的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Xpath爬虫案例.html">
+            
+                <a href="Xpath爬虫案例.html">
+            
+                    
+                    3.4 案例：贴吧图片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Json与JsonPath.html">
+            
+                <a href="Json与JsonPath.html">
+            
+                    
+                    3.5 Json与Json数据获取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="实例：糗事百科网站抓取.html">
+            
+                <a href="实例：糗事百科网站抓取.html">
+            
+                    
+                    3.6 糗事百科网站爬虫
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3.2 Xpath与XML类库</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4EC0;&#x4E48;&#x662F;xml">&#x4EC0;&#x4E48;&#x662F;XML</h2>
+<ul>
+<li>XML &#x6307;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;EXtensible Markup Language&#xFF09;</li>
+<li>XML &#x662F;&#x4E00;&#x79CD;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF0C;&#x5F88;&#x7C7B;&#x4F3C; HTML</li>
+<li>XML &#x7684;&#x8BBE;&#x8BA1;&#x5B97;&#x65E8;&#x662F;&#x4F20;&#x8F93;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x975E;&#x663E;&#x793A;&#x6570;&#x636E;</li>
+<li>XML &#x7684;&#x6807;&#x7B7E;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x81EA;&#x884C;&#x5B9A;&#x4E49;&#x3002;</li>
+<li>XML &#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x5177;&#x6709;&#x81EA;&#x6211;&#x63CF;&#x8FF0;&#x6027;&#x3002;</li>
+<li>XML &#x662F; W3C &#x7684;&#x63A8;&#x8350;&#x6807;&#x51C6;</li>
+</ul>
+<p>XML &#x548C; HTML &#x7684;&#x533A;&#x522B;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6570;&#x636E;&#x683C;&#x5F0F;</th>
+<th>&#x63CF;&#x8FF0;</th>
+<th>&#x8BBE;&#x8BA1;&#x76EE;&#x6807;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XML</td>
+<td>Extensible Markup Language &#xFF08;&#x53EF;&#x6269;&#x5C55;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF09;</td>
+<td>&#x88AB;&#x8BBE;&#x8BA1;&#x4E3A;&#x4F20;&#x8F93;&#x548C;&#x5B58;&#x50A8;&#x6570;&#x636E;&#xFF0C;&#x5176;&#x7126;&#x70B9;&#x662F;&#x6570;&#x636E;&#x7684;&#x5185;&#x5BB9;&#x3002;</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td>HyperText Markup Language &#xFF08;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF09;</td>
+<td>&#x663E;&#x793A;&#x6570;&#x636E;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x66F4;&#x597D;&#x663E;&#x793A;&#x6570;&#x636E;&#x3002;</td>
+</tr>
+<tr>
+<td>HTML DOM</td>
+<td>Document Object Model for HTML (&#x6587;&#x6863;&#x5BF9;&#x8C61;&#x6A21;&#x578B;)</td>
+<td>&#x901A;&#x8FC7; HTML DOM&#xFF0C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x6240;&#x6709;&#x7684; HTML &#x5143;&#x7D20;&#xFF0C;&#x8FDE;&#x540C;&#x5B83;&#x4EEC;&#x6240;&#x5305;&#x542B;&#x7684;&#x6587;&#x672C;&#x548C;&#x5C5E;&#x6027;&#x3002;&#x53EF;&#x4EE5;&#x5BF9;&#x5176;&#x4E2D;&#x7684;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>XML&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;cooking&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Everyday Italian<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Giada De Laurentiis<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>30.00<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;children&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>  
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;web&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>XQuery Kick Start<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>James McGovern<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Per Bothner<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Kurt Cagle<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>James Linn<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Vaidyanathan Nagarajan<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>49.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">book</span> <span class="hljs-attr">category</span>=<span class="hljs-string">&quot;web&quot;</span> <span class="hljs-attr">cover</span>=<span class="hljs-string">&quot;paperback&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>Learning XML<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>Erik T. Ray<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2003<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>39.95<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span>
+</code></pre>
+<h2 id="xml&#x7684;&#x8282;&#x70B9;&#x5173;&#x7CFB;">XML&#x7684;&#x8282;&#x70B9;&#x5173;&#x7CFB;</h2>
+<h3 id="1-&#x7236;&#xFF08;parent&#xFF09;">1. &#x7236;&#xFF08;Parent&#xFF09;</h3>
+<p>&#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x4EE5;&#x53CA;&#x5C5E;&#x6027;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;XML&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;book &#x5143;&#x7D20;&#x662F; title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#x7684;&#x7236;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+</code></pre>
+<h3 id="2-&#x5B50;&#xFF08;children&#xFF09;">2. &#x5B50;&#xFF08;Children&#xFF09;</h3>
+<p>&#x5143;&#x7D20;&#x8282;&#x70B9;&#x53EF;&#x6709;&#x96F6;&#x4E2A;&#x3001;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B50;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#x90FD;&#x662F; book &#x5143;&#x7D20;&#x7684;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+</code></pre>
+<h3 id="3-&#x540C;&#x80DE;&#xFF08;sibling&#xFF09;">3. &#x540C;&#x80DE;&#xFF08;Sibling&#xFF09;</h3>
+<p>&#x62E5;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7236;&#x7684;&#x8282;&#x70B9;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#x90FD;&#x662F;&#x540C;&#x80DE;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+</code></pre>
+<h3 id="4-&#x5148;&#x8F88;&#xFF08;ancestor&#xFF09;">4. &#x5148;&#x8F88;&#xFF08;Ancestor&#xFF09;</h3>
+<p>&#x67D0;&#x8282;&#x70B9;&#x7684;&#x7236;&#x3001;&#x7236;&#x7684;&#x7236;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;title &#x5143;&#x7D20;&#x7684;&#x5148;&#x8F88;&#x662F; book &#x5143;&#x7D20;&#x548C; bookstore &#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span>
+</code></pre>
+<h3 id="5-&#x540E;&#x4EE3;&#xFF08;descendant&#xFF09;">5. &#x540E;&#x4EE3;&#xFF08;Descendant&#xFF09;</h3>
+<p>&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5B50;&#xFF0C;&#x5B50;&#x7684;&#x5B50;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;bookstore &#x7684;&#x540E;&#x4EE3;&#x662F; book&#x3001;title&#x3001;author&#x3001;year &#x4EE5;&#x53CA; price &#x5143;&#x7D20;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">author</span>&gt;</span>J K. Rowling<span class="hljs-tag">&lt;/<span class="hljs-name">author</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">year</span>&gt;</span>2005<span class="hljs-tag">&lt;/<span class="hljs-name">year</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span>
+</code></pre>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;xpath&#xFF1F;">&#x4EC0;&#x4E48;&#x662F;XPath&#xFF1F;</h2>
+<p>XPath (XML Path Language) &#x662F;&#x4E00;&#x95E8;&#x5728; XML &#x6587;&#x6863;&#x4E2D;&#x67E5;&#x627E;&#x4FE1;&#x606F;&#x7684;&#x8BED;&#x8A00;&#xFF0C;&#x53EF;&#x7528;&#x6765;&#x5728; XML &#x6587;&#x6863;&#x4E2D;&#x5BF9;&#x5143;&#x7D20;&#x548C;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x904D;&#x5386;&#x3002;</p>
+<p>W3School&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF1A;<a href="http://www.w3school.com.cn/xpath/index.asp" target="_blank">http://www.w3school.com.cn/xpath/index.asp</a></p>
+<h3 id="xpath-&#x5F00;&#x53D1;&#x5DE5;&#x5177;">XPath &#x5F00;&#x53D1;&#x5DE5;&#x5177;</h3>
+<ol>
+<li>&#x5F00;&#x6E90;&#x7684;XPath&#x8868;&#x8FBE;&#x5F0F;&#x7F16;&#x8F91;&#x5DE5;&#x5177;:XMLQuire(XML&#x683C;&#x5F0F;&#x6587;&#x4EF6;&#x53EF;&#x7528;)</li>
+<li>Chrome&#x63D2;&#x4EF6; XPath Helper</li>
+<li>Firefox&#x63D2;&#x4EF6; XPath Checker</li>
+</ol>
+<h3 id="xpath&#x8BED;&#x6CD5;">XPATH&#x8BED;&#x6CD5;</h3>
+<p>XPath &#x4F7F;&#x7528;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x6765;&#x9009;&#x53D6; XML &#x6587;&#x6863;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x6216;&#x8005;&#x8282;&#x70B9;&#x96C6;&#x3002;&#x8FD9;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x548C;&#x6211;&#x4EEC;&#x5728;&#x5E38;&#x89C4;&#x7684;&#x7535;&#x8111;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x4E2D;&#x770B;&#x5230;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x3002;</p>
+<p>&#x6211;&#x4EEC;&#x5728;&#x4E0B;&#x5217;&#x4F8B;&#x5B50;&#x7684;&#x6570;&#x636E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="php"><span class="hljs-meta">&lt;?</span>xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;ISO-8859-1&quot;</span><span class="hljs-meta">?&gt;</span></span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">bookstore</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;eng&quot;</span>&gt;</span>Harry Potter<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>29.99<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">book</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;eng&quot;</span>&gt;</span>Learning XML<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">price</span>&gt;</span>39.95<span class="hljs-tag">&lt;/<span class="hljs-name">price</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">book</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">bookstore</span>&gt;</span>
+</code></pre>
+<h3 id="&#x9009;&#x53D6;&#x8282;&#x70B9;">&#x9009;&#x53D6;&#x8282;&#x70B9;</h3>
+<p>XPath &#x4F7F;&#x7528;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x5728; XML &#x6587;&#x6863;&#x4E2D;&#x9009;&#x53D6;&#x8282;&#x70B9;&#x3002;&#x8282;&#x70B9;&#x662F;&#x901A;&#x8FC7;&#x6CBF;&#x7740;&#x8DEF;&#x5F84;&#x6216;&#x8005; step &#x6765;&#x9009;&#x53D6;&#x7684;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x5217;&#x51FA;&#x4E86;&#x6700;&#x6709;&#x7528;&#x7684;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nodename</td>
+<td>&#x9009;&#x53D6;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>/</td>
+<td>&#x4ECE;&#x6839;&#x8282;&#x70B9;&#x9009;&#x53D6;&#x3002;</td>
+</tr>
+<tr>
+<td>//</td>
+<td>&#x4ECE;&#x5339;&#x914D;&#x9009;&#x62E9;&#x7684;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x9009;&#x62E9;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x800C;&#x4E0D;&#x8003;&#x8651;&#x5B83;&#x4EEC;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>.</td>
+<td>&#x9009;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>..</td>
+<td>&#x9009;&#x53D6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>@</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p><strong>&#x5B9E;&#x4F8B;:</strong></p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x4EE5;&#x53CA;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bookstore</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore</td>
+<td>&#x9009;&#x53D6;&#x6839;&#x5143;&#x7D20; bookstore&#x3002;&#x6CE8;&#x91CA;&#xFF1A;&#x5047;&#x5982;&#x8DEF;&#x5F84;&#x8D77;&#x59CB;&#x4E8E;&#x6B63;&#x659C;&#x6760;( / )&#xFF0C;&#x5219;&#x6B64;&#x8DEF;&#x5F84;&#x59CB;&#x7EC8;&#x4EE3;&#x8868;&#x5230;&#x67D0;&#x5143;&#x7D20;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF01;</td>
+</tr>
+<tr>
+<td>bookstore/book</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x7684;&#x5B50;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//book</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709; book &#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;&#x5B83;&#x4EEC;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>bookstore//book</td>
+<td>&#x9009;&#x62E9;&#x5C5E;&#x4E8E; bookstore &#x5143;&#x7D20;&#x7684;&#x540E;&#x4EE3;&#x7684;&#x6240;&#x6709; book &#x5143;&#x7D20;&#xFF0C;&#x800C;&#x4E0D;&#x7BA1;&#x5B83;&#x4EEC;&#x4F4D;&#x4E8E; bookstore &#x4E4B;&#x4E0B;&#x7684;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#x3002;</td>
+</tr>
+<tr>
+<td>//@lang</td>
+<td>&#x9009;&#x53D6;&#x540D;&#x4E3A; lang &#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x8C13;&#x8BED;&#xFF08;predicates&#xFF09;">&#x8C13;&#x8BED;&#xFF08;Predicates&#xFF09;</h3>
+<p>&#x8C13;&#x8BED;&#x7528;&#x6765;&#x67E5;&#x627E;&#x67D0;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x8282;&#x70B9;&#x6216;&#x8005;&#x5305;&#x542B;&#x67D0;&#x4E2A;&#x6307;&#x5B9A;&#x7684;&#x503C;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x88AB;&#x5D4C;&#x5728;&#x65B9;&#x62EC;&#x53F7;&#x4E2D;&#x3002;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5217;&#x51FA;&#x4E86;&#x5E26;&#x6709;&#x8C13;&#x8BED;&#x7684;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/bookstore/book[1]</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5B50;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[last()]</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5B50;&#x5143;&#x7D20;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[last()-1]</td>
+<td>&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5B50;&#x5143;&#x7D20;&#x7684;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[position()&lt;3]</td>
+<td>&#x9009;&#x53D6;&#x6700;&#x524D;&#x9762;&#x7684;&#x4E24;&#x4E2A;&#x5C5E;&#x4E8E; bookstore &#x5143;&#x7D20;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x7684; book &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//title[@lang]</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709;&#x62E5;&#x6709;&#x540D;&#x4E3A; lang &#x7684;&#x5C5E;&#x6027;&#x7684; title &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//title[@lang=&#x2019;eng&#x2019;]</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709; title &#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x8FD9;&#x4E9B;&#x5143;&#x7D20;&#x62E5;&#x6709;&#x503C;&#x4E3A; eng &#x7684; lang &#x5C5E;&#x6027;&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; book &#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x5176;&#x4E2D;&#x7684; price &#x5143;&#x7D20;&#x7684;&#x503C;&#x987B;&#x5927;&#x4E8E; 35.00&#x3002;</td>
+</tr>
+<tr>
+<td>/bookstore/book[price&gt;35.00]/title</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x4E2D;&#x7684; book &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; title &#x5143;&#x7D20;&#xFF0C;&#x4E14;&#x5176;&#x4E2D;&#x7684; price &#x5143;&#x7D20;&#x7684;&#x503C;&#x987B;&#x5927;&#x4E8E; 35.00&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x9009;&#x53D6;&#x672A;&#x77E5;&#x8282;&#x70B9;">&#x9009;&#x53D6;&#x672A;&#x77E5;&#x8282;&#x70B9;</h3>
+<p>XPath &#x901A;&#x914D;&#x7B26;&#x53EF;&#x7528;&#x6765;&#x9009;&#x53D6;&#x672A;&#x77E5;&#x7684; XML &#x5143;&#x7D20;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x901A;&#x914D;&#x7B26;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>@*</td>
+<td>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5C5E;&#x6027;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+<tr>
+<td>node()</td>
+<td>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x7C7B;&#x578B;&#x7684;&#x8282;&#x70B9;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD9;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/bookstore/*</td>
+<td>&#x9009;&#x53D6; bookstore &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>//*</td>
+<td>&#x9009;&#x53D6;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>html/node()/meta/@*</td>
+<td>&#x9009;&#x62E9;html&#x4E0B;&#x9762;&#x4EFB;&#x610F;&#x8282;&#x70B9;&#x4E0B;&#x7684;meta&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5C5E;&#x6027;</td>
+</tr>
+<tr>
+<td>//title[@*]</td>
+<td>&#x9009;&#x53D6;&#x6240;&#x6709;&#x5E26;&#x6709;&#x5C5E;&#x6027;&#x7684; title &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x9009;&#x53D6;&#x82E5;&#x5E72;&#x8DEF;&#x5F84;">&#x9009;&#x53D6;&#x82E5;&#x5E72;&#x8DEF;&#x5F84;</h3>
+<p>&#x901A;&#x8FC7;&#x5728;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#x4E2D;&#x4F7F;&#x7528;<code>&#x201C;|&#x201D;</code>&#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x60A8;&#x53EF;&#x4EE5;&#x9009;&#x53D6;&#x82E5;&#x5E72;&#x4E2A;&#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x5B9E;&#x4F8B;</p>
+<p>&#x5728;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x683C;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5217;&#x51FA;&#x4E86;&#x4E00;&#x4E9B;&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD9;&#x4E9B;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x7ED3;&#x679C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x8DEF;&#x5F84;&#x8868;&#x8FBE;&#x5F0F;</th>
+<th>&#x7ED3;&#x679C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>`//book/title</td>
+<td>//book/price`</td>
+<td>&#x9009;&#x53D6; book &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; title &#x548C; price &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td>`//title</td>
+<td>//price`</td>
+<td>&#x9009;&#x53D6;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x6240;&#x6709; title &#x548C; price &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+<tr>
+<td><code>/bookstore/book/title</code></td>
+<td>//price&#x9009;&#x53D6;&#x5C5E;&#x4E8E; bookstore &#x5143;&#x7D20;&#x7684; book &#x5143;&#x7D20;&#x7684;&#x6240;&#x6709; title &#x5143;&#x7D20;&#xFF0C;&#x4EE5;&#x53CA;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x6709;&#x7684; price &#x5143;&#x7D20;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="正则抓取.html" class="navigation navigation-prev " aria-label="Previous page: 3.1 使用正则的爬虫">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lxml.html" class="navigation navigation-next " aria-label="Next page: 3.3 LXML库的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3.2 Xpath与XML类库","level":"1.4.2","depth":2,"next":{"title":"3.3 LXML库的使用","level":"1.4.3","depth":2,"path":"notes/lxml.md","ref":"notes/lxml.md","articles":[]},"previous":{"title":"3.1 使用正则的爬虫","level":"1.4.1","depth":2,"path":"notes/正则抓取.md","ref":"notes/正则抓取.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"notes/xpath与XML.md","mtime":"2019-05-04T08:39:48.019Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-08T15:13:08.843Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
